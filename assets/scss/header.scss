@@ -1,0 +1,42 @@
+.header {
+  background: url("../img/bg-1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  height: 100vh;
+
+  &__info {
+    text-align: center;
+
+    &-title {
+      position: relative;
+      margin: 0;
+      padding-top: 252px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 37px;
+      color: $c-white;
+      text-transform: uppercase;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 86px;
+        height: 2px;
+        background: $c-white;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -52px;
+      }
+    }
+
+    &-text {
+      display: block;
+      padding-top: 100px;
+      font-family: 'Lato', sans-serif;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 1.1px;
+      color: $c-lighter-white;
+    }
+  }
+}

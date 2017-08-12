@@ -1,0 +1,66 @@
+.arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92px;
+  height: 92px;
+  fill: $c-white;
+  opacity: .5;
+}
+.iphone {
+  margin-top: 2px;
+  width: 75px;
+  height: 132px;
+  fill: $c-blue;
+}
+.responsive {
+  width: 192px;
+  height: 149px;
+  fill: $c-blue;
+}
+.check {
+  margin-top: 21px;
+  width: 116px;
+  height: 116px;
+  fill: $c-blue;
+}
+.link {
+  width: 42px;
+  height: 42px;
+  fill: $c-white;
+}
+.facebook {
+  width: 14px;
+  height: 25px;
+  fill: $c-white;
+  align-self: flex-end;
+
+}
+.twitter {
+  width: 25px;
+  height: 20px;
+  fill: $c-white;
+  align-self: flex-end;
+}
+.behance {
+  width: 25px;
+  height: 17px;
+  fill: $c-white;
+  align-self: flex-end;
+
+}
+.vimeo {
+  width: 25px;
+  height: 22px;
+  fill: $c-white;
+  align-self: flex-end;
+
+}
+.linkedin {
+  width: 24px;
+  height: 25px;
+  fill: $c-white;
+  align-self: flex-end;
+
+}
