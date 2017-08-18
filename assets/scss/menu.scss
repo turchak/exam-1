@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+
   .logo {
     &__link {}
 
@@ -16,9 +17,11 @@
     margin: 0 70px 0 0;
     padding: 0;
     list-style: none;
+
     &__item {}
 
     &__link {
+      position: relative;
       font-family: 'Lato', sans-serif;
       font-size: 14px;
       font-weight: 500;
@@ -26,6 +29,32 @@
       letter-spacing: 0.3px;
       color: $c-lighter-white;
       text-transform: uppercase;
+      transition: color 0.3s;
+      
+      &::before,
+      &::after {
+        display: inline-block;
+	      opacity: 0;
+      	transition: transform 0.3s, opacity 0.2s;
+      }
+      &::before {
+        margin-right: 10px;
+      	content: '[';
+      	transform: translateX(20px);
+      }
+      &::after {
+        margin-left: 10px;
+      	content: ']';
+      	transform: translateX(-20px);
+      }
+
+      &:focus::before,
+      &:focus::after,
+      &:hover::before,
+      &:hover::after {
+        opacity: 1;
+      	transform: translateX(0px);
+      }
     }
   }
 }

@@ -41,6 +41,7 @@
       align-content: center;
       flex-wrap: wrap;
       opacity: 0.75;
+      transition: opacity .3s ease;
     }
   }
 
@@ -54,6 +55,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     background: $c-black;
+    transition: opacity .3s ease;
 
     &-text {
       display: block;
