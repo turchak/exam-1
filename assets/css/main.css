@@ -292,11 +292,26 @@ a {
     color: #ffffff;
     text-transform: uppercase; }
 .works__button {
+  position: relative;
   display: block;
   margin: 0 auto 78px;
   width: 370px;
   height: 60px;
   border: solid 3px #222222; }
+  .works__button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #222222;
+    transition: all 0.3s;
+    z-index: -1; }
+  .works__button-text:hover {
+    color: #ffffff; }
+  .works__button:hover:after {
+    height: 100%; }
   .works__button-text {
     display: block;
     font-family: 'Lato', sans-serif;
@@ -366,6 +381,7 @@ a {
       width: 100%;
       margin-top: 99px; }
     .footer .form__button {
+      position: relative;
       display: block;
       margin: 50px auto 0;
       padding: 0;
@@ -373,8 +389,27 @@ a {
       width: 183px;
       height: 60px;
       background: transparent;
-      border: solid 3px #ffffff; }
+      border: solid 3px #ffffff;
+      z-index: 1;
+      cursor: pointer; }
+      .footer .form__button:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        transition: all 0.3s;
+        z-index: -1; }
+      .footer .form__button:hover:after {
+        height: 100%; }
+      .footer .form__button:hover {
+        color: #222222; }
       .footer .form__button-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family: 'Lato', sans-serif;
         font-size: 24px;
         line-height: 54px;
@@ -382,5 +417,7 @@ a {
         text-align: center;
         color: #ffffff;
         text-transform: uppercase; }
+        .footer .form__button-text:hover {
+          color: #222222; }
 
 /*# sourceMappingURL=main.css.map */
